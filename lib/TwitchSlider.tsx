@@ -7,8 +7,10 @@ export type TwitchSliderProps = {
   children: React.ReactElement[];
   initialCenterSlideIndex: number;
   interval: number;
+  nextButtonClassName?: string;
   nextButtonContent: React.ReactNode;
   pauseOnHover: false | 'centerSlide' | 'allSlides' | 'wrapper';
+  prevButtonClassName?: string;
   prevButtonContent: React.ReactNode;
   side1SlidesClassName?: string;
   side1SlidesScale: string;
@@ -30,8 +32,10 @@ export default function TwitchSlider(props: TwitchSliderProps) {
     children,
     initialCenterSlideIndex,
     interval,
+    nextButtonClassName,
     nextButtonContent,
     pauseOnHover,
+    prevButtonClassName,
     prevButtonContent,
     side1SlidesClassName,
     side1SlidesScale,
@@ -217,7 +221,7 @@ export default function TwitchSlider(props: TwitchSliderProps) {
       </div>
 
       <button
-        className="rts-next-button"
+        className={nextButtonClassName}
         onClick={handleNext}
         style={{
           position: 'absolute',
@@ -230,7 +234,7 @@ export default function TwitchSlider(props: TwitchSliderProps) {
       </button>
 
       <button
-        className="rts-prev-button"
+        className={prevButtonClassName}
         onClick={handlePrev} 
         style={{
           position: 'absolute',
