@@ -251,7 +251,7 @@ export default function TwitchSlider(props: TwitchSliderProps) {
 
 TwitchSlider.defaultProps = {
   autoPlay: true,
-  initialCenterSlideIndex: 6,
+  initialCenterSlideIndex: 0,
   interval: 5,
   nextButtonContent: '>>',
   pauseOnHover: 'centerSlide',
