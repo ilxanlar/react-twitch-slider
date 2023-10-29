@@ -21,6 +21,10 @@ export default function App() {
   return (
     <div style={{ margin: '25vh 0' }}>
       <TwitchSlider
+        nextButtonClassName={classes.nextButton}
+        nextButtonContent=">"
+        prevButtonClassName={classes.prevButton}
+        prevButtonContent="<"
         // side2SlidesClassName={classes.side2Slides}
         // side1SlidesClassName={classes.side1Slides}
         // centerSlideClassName={classes.centerSlide}
