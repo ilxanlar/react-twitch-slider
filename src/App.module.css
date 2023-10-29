@@ -1,0 +1,33 @@
+.slide {
+  background-color: white;
+  /* border: 1px solid transparent; */
+  border-radius: 10px;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slide img {
+  display: block;
+  width: 100%;
+}
+
+.side2Slides .slide {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.side2Slides .slide img {
+  opacity: 0.3;
+}
+
+.side1Slides .slide {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.side1Slides .slide img {
+  opacity: 0.5;
+}
+
+.centerSlide .slide {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
