@@ -1,6 +1,8 @@
 # React Twitch Slider
 
-Create sliders just like Twitch home page slider in seconds!
+Create sliders like this in seconds!
+
+![Preview](./react-twitch-slider-preview.gif)
 
 ## How to Use?
 
